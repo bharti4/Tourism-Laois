@@ -1,0 +1,218 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    padding:0px;
+    margin:0px;
+    text-align: center;
+   
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+   
+  }
+/*logo CSS style for footer and header*/
+.logo-image
+{
+    margin-left:10px;
+    max-width: 200px;
+    border-radius: 0.5em;
+    width: 80%;
+    height: 120px;
+    max-height:  150px;
+    
+}
+.logo-light-box1{
+    max-width:  150px;
+}
+header , footer
+{
+  background-color: green;
+  margin: 0px;
+  padding: 20px 10px 10px ;
+  align-items: center;
+  
+}
+@media(min-width:25em)
+{
+    header,footer{
+        padding: 5px 5px 0px ;
+    }
+    .header-container , .footer-container
+    {
+            display: flex;  
+            justify-content: space-between;
+            margin-bottom: 0;
+    }
+    /* .footer-container{
+        display:grid;
+    } */
+    .footer-container-logo-box1
+    {
+        width:30%
+    }
+    .social-media-box2
+    {
+        width:50%;
+        text-align: left;
+        justify-content: left;
+        margin-left:0px;
+    }
+    .header-container li 
+    {
+      display: inline-block;
+      margin: 10px;
+    }
+    .explore-detail-containter
+    {
+        display:grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 4em;
+    } 
+}
+
+    
+.footer-container li
+    {
+      display: inline-block;
+      margin: 10px;
+    } 
+
+/* CSS styles for header*/
+ul 
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    line-height: 2.5em;
+}
+
+
+a
+{
+    color:white;
+    text-decoration: none;
+    padding: 10px ;
+}
+
+header a:hover, footer a:hover
+{
+   background-color: lightgreen;
+   border-radius: 0.5em;
+}
+
+/* Style for footer container*/
+
+.footer-container ul
+{
+    margin-left:40px;
+}
+
+.footer-container p
+{
+    color:white;
+    font-size:  14px; 
+    margin:0px;
+    text-align: center;
+}
+.footer-container
+{
+    align-items: center;
+}
+.social-media-logo
+{
+    max-width:20px;
+    height:20px;
+    margin:0px
+}
+
+ .footer-container p{
+    text-align: left;
+    padding-bottom: 10px;
+}
+.footer-container ul{
+    margin:0;
+    padding: 0;
+}
+
+
+
+
+/* display animated h1 text over image*/
+.h1-image-container {
+  position: relative;
+  display: block;
+  width:100%;
+}
+.h1-image-container > img
+{
+    width: 100%;
+    height:auto;
+    max-height: 600px;
+}
+
+.h1-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5em;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white ; /*black*/
+  }
+
+.h1-animated-text {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+h1{
+    color:green;/*lightgoldenrodyellow;*/
+    font-style: italic;
+    font-size:4vw /* Responsive header Text*/
+}
+
+
+/*Navigation image links on bottom of  index pages*/
+
+.link-sections{
+    display:flex;
+    padding: 10px;
+}
+
+.link-sections-image{
+    width:22%;
+    height: 350px;
+    margin:auto;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: height 1s;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 0.5em ;
+}
+.link-sections-image:hover{
+   
+    height: 400px;
+   
+}
+.link-sections h3 a{
+    background-color: whitesmoke;
+    border-radius: 0.25em;
+    color:green;
+    
+}
+
