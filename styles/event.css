@@ -1,0 +1,28 @@
+.container {  display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    
+    grid-template-areas:
+      "Event-Image Event-Heading Event-Heading"
+      "Event-Image Event-Date-price-location Event-Date-price-location"
+      ". Event-Detail-Description Event-Detail-Description";
+    border-radius: 0.5em;
+    
+  }
+  
+  .Event-Image { grid-area: Event-Image; }
+  
+  .Event-Heading { grid-area: Event-Heading; }
+  
+  .Event-Date-price-location { grid-area: Event-Date-price-location; }
+  
+  .Event-Detail-Description { grid-area: Event-Detail-Description; }
+  
+  .book-submit-button{
+    border : solid  2px;
+    border-radius: 0.25em; 
+    margin-bottom: 10px;
+    color:green
+ }

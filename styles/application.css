@@ -1,76 +1,45 @@
+
+
 body{
-    font-family: 'Times New Roman', Times, serif;
-    padding:0px;
-    margin:0px;
-    text-align: center;
-   
+  font-family: 'Times New Roman', Times, serif;
+  padding:0px;
+  margin:0px;
+  text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Playfair Display";
-    letter-spacing: 5px;
-   
-  }
+  font-family: "Playfair Display";
+  letter-spacing: 3px;
+}
 /*logo CSS style for footer and header*/
+
 .logo-image
 {
-    margin-left:10px;
-    max-width: 200px;
-    border-radius: 0.5em;
-    width: 80%;
-    height: 120px;
-    max-height:  150px;
-    
+  margin-left:10px;
+  max-width: 200px;
+  border-radius: 0.5em;
+  width: 80%;
+  height: 120px;
+  max-height:  150px;
+  
 }
 .logo-light-box1{
-    max-width:  150px;
+  max-width:  150px;
+  margin:auto;
+  margin-bottom:5px;
+  margin-top:5px
 }
 header , footer
 {
-  background-color: green;
-  margin: 0px;
-  padding: 20px 10px 10px ;
-  align-items: center;
-  
-}
-@media(min-width:25em)
-{
-    header,footer{
-        padding: 5px 5px 0px ;
-    }
-    .header-container , .footer-container
-    {
-            display: flex;  
-            justify-content: space-between;
-            margin-bottom: 0;
-    }
-    /* .footer-container{
-        display:grid;
-    } */
-    .footer-container-logo-box1
-    {
-        width:30%
-    }
-    .social-media-box2
-    {
-        width:50%;
-        text-align: left;
-        justify-content: left;
-        margin-left:0px;
-    }
-    .header-container li 
-    {
-      display: inline-block;
-      margin: 10px;
-    }
-    .explore-detail-containter
-    {
-        display:grid;
-        grid-template-columns: 50% 50%;
-        row-gap: 4em;
-    } 
-}
+background-color: green;
+margin: 0px;
+padding: 20px 10px 10px ;
+align-items: center;
 
-    
+}
+p{
+  font-size:1.5vw;
+}
+/*style for footer of the page*/
 .footer-container li
     {
       display: inline-block;
@@ -86,12 +55,11 @@ ul
     line-height: 2.5em;
 }
 
-
-a
+ul a
 {
     color:white;
     text-decoration: none;
-    padding: 10px ;
+    padding: 16px ;
 }
 
 header a:hover, footer a:hover
@@ -135,8 +103,6 @@ header a:hover, footer a:hover
 }
 
 
-
-
 /* display animated h1 text over image*/
 .h1-image-container {
   position: relative;
@@ -147,7 +113,11 @@ header a:hover, footer a:hover
 {
     width: 100%;
     height:auto;
-    max-height: 600px;
+    max-height: 700px;
+}
+.h1-image-restarant > img{
+  height:auto;
+  max-height: 500px;
 }
 
 .h1-container {
@@ -158,7 +128,7 @@ header a:hover, footer a:hover
   border-radius: 0.5em;
   padding-left: 5px;
   padding-right: 5px;
-  background-color: white ; /*black*/
+  background-color: transparent ; /*black*/
   }
 
 .h1-animated-text {
@@ -177,21 +147,17 @@ header a:hover, footer a:hover
 }
 
 h1{
-    color:green;/*lightgoldenrodyellow;*/
+    color:gold;
     font-style: italic;
-    font-size:4vw /* Responsive header Text*/
+    font-size:5vw ;/* Responsive header Text*/
 }
-
 
 /*Navigation image links on bottom of  index pages*/
 
-.link-sections{
-    display:flex;
-    padding: 10px;
-}
+
 
 .link-sections-image{
-    width:22%;
+    width:75%;
     height: 350px;
     margin:auto;
     padding:10px;
@@ -203,6 +169,8 @@ h1{
     background-size:cover;
     background-repeat: no-repeat;
     border-radius: 0.5em ;
+    margin-bottom: 5px;
+    
 }
 .link-sections-image:hover{
    
@@ -216,3 +184,291 @@ h1{
     
 }
 
+/* CSS for explore page */
+  
+
+.placeDetail
+{
+    text-align: left;
+}
+.exploreImage
+{
+    width:100%;
+    height: 350px;
+    padding:10px;
+    transition: height 1s;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 0.5em ;
+}
+.exploreImage:hover{
+    shape-rendering: crispEdges;
+}
+
+.explore-container
+{
+   text-align: center;
+   align-items: center;
+   padding:0.8em 1.2em;
+   margin-left: 20px;
+   margin-right: 20px;
+}  
+
+
+/*style for forms in contact us and booking  form*/
+.form-container {
+    width: 60%;
+    padding: 8px 16px;
+    background-color:rgb(200, 238, 200);
+    border-radius: 0.25em;
+    color:black;
+    padding: 2em;
+    margin:10px;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.info-container
+{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  
+}
+label {
+   
+    width: 100%;
+    padding-bottom: 20px;
+
+  }
+  input {
+      width:100%;
+      border: 1px solid orange;
+  }
+.form-control {
+    margin-bottom: 1em;
+    width: 100%;
+    
+}
+
+
+.form-control input
+{
+    padding: 0.5em;
+}
+
+.field-error {
+    color: red;
+    font-weight: bold;
+}
+ 
+ input:focus
+ {
+     border: 2px solid green;
+ }
+
+/* Style for the submit button */ 
+.submit-button  {
+    background-color: #4CAF50;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    float:left;
+ }
+ .add-to-cart-button
+ {
+  background-color: #4CAF50;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    float:right;
+ }
+.submit-button input , .add-to-cart-button input
+{
+  border: none;
+  background-color: transparent;
+  color:white;
+  width:auto;
+}
+
+ /* Style for the submit button when hovering */
+ .submit-button:hover  {
+  background-color: #3e8e41;
+}
+/* Style for the fieldset */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for the legend */
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for the input fields */
+input[type="number"],
+input[type="text"],
+input[type="email"]
+ {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.contact-email-links 
+{
+    text-align: left;
+    background-color: antiquewhite;
+    margin:10px;
+    border-radius: 0.5em;
+    padding: 8px 16px;
+}
+ 
+/* style for explore type of activity */
+
+.type-of-activity-selection :hover
+{
+  height:45px;
+}
+.type-of-activity-Button
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 2px solid green ;
+  border-radius: 0.25em;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  margin:auto;
+}
+.type-of-activity-Button img{
+  margin-right: 5px;
+  height: 40px;
+}
+
+/* style for popup messages in contact us and cart page*/
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display:none;
+}
+
+#popup p {
+  margin-bottom: 10px;
+}
+
+#popup button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.social-media-box2 p
+{
+  width:100%;
+  text-align: center;
+   
+}
+
+@media(min-width:700px)
+{
+    header,footer{
+        padding: 5px 5px 0px ;
+    }
+    .header-container , .footer-container
+    {
+            display: flex;  
+            justify-content: space-between;
+            margin-bottom: 0;
+    }
+    
+    .footer-container-logo-box1
+    {
+        width:30%
+    }
+    .social-media-box2
+    {
+      width:50%;
+      text-align: left;
+      justify-content: left;
+      margin:auto;
+        
+    }
+    .social-media-box2 p
+    {
+      width:50%;
+      text-align: left;
+      
+    }
+    .header-container li 
+    {
+      display: inline-block;
+      margin: 10px;
+    }
+    .intro-container{
+        margin: 10px 40px;
+    }
+    /*index page*/
+    .link-sections{
+      display:flex;
+      padding: 10px;
+      
+    }
+    .link-sections-image{
+       width:22%;
+       margin:5px;
+    }
+    
+    /*Food and driik page*/
+    .type-of-activity-selection
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /*margin-left:5px;*/
+    
+      margin-bottom: 5px;
+    }
+    .type-of-activity-Button
+    {
+      margin:5px;
+    }
+    /* place to visit page*/
+    .explore-detail-containter
+    {
+        display:grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 4em;
+        column-gap: 4em;
+        align-items: center;
+        justify-content: center;
+        Margin:40px;
+        text-align: left;
+        margin:40px 60px 80px 30px
+    } 
+ 
+}

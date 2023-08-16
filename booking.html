@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Booking-Laois</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Beautiful places to in Laois to explore , have wonderfull time with family and freinds"/>
+    <link rel="stylesheet" href="/styles/application.css">
+    <link rel="icon" type="image/x-icon" href="/images/Laois-logo/3.png">
+    <style>
+      h1{
+        color:green;
+        font-size: medium;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="info-container">
+      <h1 id="eventName">Shopping Cart</h1>
+      <div class="form-container"> 
+          <form novalidate>
+            <fieldset>
+              <legend>Select Your Tickets:</legend>
+              <label for="adult">Adult:</label>
+              <input type="number" name="adult" id="adult" min="0" max="100" value="0"><br>
+              <label for="child">Child:</label>
+              <input type="number" name="child" id="child" min="0" max="100" value="0"><br>
+              <label for="senior">Senior:</label>
+              <input type="number" name="senior" id="senior" min="0" max="100" value="0"><br>
+            </fieldset>
+          
+          <div class = "add-to-cart-button">
+            <input id="addToCartBtn" type="submit"  value="Add to Cart"></div>
+          </div>
+          
+       </form>
+  </div>
+</div>
+    <script type="module" src="/javascripts/booking.js"></script>
+  </body>
+</html>

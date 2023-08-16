@@ -1,0 +1,75 @@
+.container{
+    align-items: center;
+}
+ 
+  /* style for resturant class */
+
+.resturant {
+      margin: 5px 10px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: rgb(173, 242, 173);
+  }
+ 
+  .resturant img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    image-rendering: auto;
+  }
+  .restaurant h2 {
+    margin: 10px 0 5px;
+    font-size: 12vw;
+  }
+
+  .restaurant p {
+    margin: 5px 0;
+    font-size: 14vw;
+  }
+  
+ /* Set the height of the map container */
+#resturantMap { 
+    height: 400px;
+    width: 95% ;
+    margin:15px;
+    max-height: 400px;
+}
+.restaurant-container a{
+  color:green;
+  text-decoration: underline;
+  font: size 14vw;
+  margin-left:5px;
+  margin-right: 5px;
+}
+
+.close-button {
+  font-size: 2rem;
+  background: transparent;
+  color: var(--clr-grey-5);
+  /*position: relative;*/
+  float:right;
+  top: 0.5rem;
+  left: 1rem;
+  cursor: pointer;
+  margin:0px;
+  padding:0px;
+  border : 1px solid white;
+  border-radius: 0.5em;
+}
+
+@media(min-width:600px){
+       /* Food and Drink Page , resturant list container */
+    .resturantList{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin:10px;
+      margin-left:10px;
+   }
+   .resturant {
+    width: calc(25% - 20px);
+   }
+}

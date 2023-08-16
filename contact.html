@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Laois | Laois Tourism </title>
+
+<head>
+  <title>Contact Us | Laois Tourism </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Beautiful places to in Laois to explore , have wonderfull time with family and freinds"/>
   <link rel="stylesheet"  href="styles/application.css">
   <link rel="icon" type="image/x-icon" href="/images/Laois-logo/3.png">
-  <body>
+  <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <style>
+    a{
+      color:blue;
+    }
+ </style>
+</head>
+
+<body>
     <!-- Header of the page -->
-    
     <header > 
-      
-         <!--
-          <img src="/images/Laois-logo/5.png" alt="Laois Tourism site logo" >
-         <img src="/images/Laois-logo/4.png" alt="Laois Tourism site logo" >
-         <img src="/images/Laois-logo/1.png" alt="Laois Tourism site logo" >
-         <img src="/images/Laois-logo/6.png" alt="Laois Tourism site logo" >
-         -->
-       
       <nav class="header-container">
         <a href="/index.html" >
           <div class="logo-light-box1" >
@@ -29,35 +30,52 @@
           <li><a href="resturants.html" >Food & Drink</a></li>
           <li><a href="event.html">Events</a> </li>
           <li><a href="/contact.html">Contact Us</a></li>
+          <!-- cart icon -->
+          <li> <a href="/cartDetail.html" > <i class="fas fa-shopping-cart"></i> </a>
         </ul>
-       
       </nav>
     </header>
     <main >
-
+      <div class="container">
+        <div class="h1-image-container">
+                <img src="/images/Contact-Us.jpg" alt="Beautiful Laois ">
+                <div class="h1-container">
+                  <h1 class="h1-animated-text"> Contact Us ! </h1>
+                </div>
+        </div>
       <div class="info-container">
-        <div >
-         <p><b>To Contact us !</b>
-         <p>Get in touch via email or social media</p>
-         <p> Contact through email for<a href="mailto:laois.tourism@mylaois.ie">Tourism Related Queries!</a>  </p> 
-        <p> Contact us  through email link for <a href="mailto:laois.tourism@mylaois.ie">event</a> Related Queries!</p> 
-        <p>Please feel free to  Subsribe our NewsLatter ! </p>
-            <form action="/">
-                <div class="form-control">
-                    <label for="fullname">Your full name</label>
-                    <input required type="fullname" type="text" name="fullname">
-                </div>
-                <div class="form-control">
-                    <label for="lastname">Your full name</label>
-                    <input required type="lastname" type="text" name="lastname">
-                </div>       
-                <div class="form-control">
-                    <label for="email">Your email</Label>
-                    <input type="email" id="email" name="email"></textarea>
-                </div>
-                    <input type="submit" value="Go!" />
-            </form>
-        </p>
+        <div class="contact-email-links">
+            <p><b>To Contact us !</b>
+            <p>Get in touch via email or social media</p>
+            <p> Contact through email for<a href="mailto:laois.tourism@mylaois.ie">Tourism Related Queries!</a>  </p> 
+            <p> Contact us  through email link for <a href="mailto:laois.tourism@mylaois.ie">event</a> Related Queries!</p> 
+        </div>
+        <div id="popup">
+          <p id="popup-message"></p>
+          <button id="closeBtn">Close</button>
+        </div>       
+        <div class="form-container">
+            <form id="myForm" novalidate>
+                 <fieldset>
+                      <legend>Please feel free to  Subsribe our NewsLatter !</legend>
+                      <label for="firstname">First Name:</label>
+                      <input required type="text"  id='firstName' name="firstName" placeholder="First Name">
+                      <div class="field-error"></div>
+                      <label for="lastname">Last Name:(Optional)</label>
+                      <input required type="text"  id="lastname" name="lastname" placeholder="Last Name">
+                      <div class="field-error"></div>
+                      <label for="email">Your Email</Label>
+                      <input required type="email" id="emailAddress" name="email" placeholder="Email">
+                      <div class="field-error"></div>
+                  </fieldset>
+                  <div class = "submit-button">
+                      <input class = "submit-button" type="submit" value="Go!" />
+                  </div>
+              </form>
+            </div>
+            <p style="color:darkorange"> Thank You for Visiting Site!!!</p>
+          </div>
+        
      </div>
       
     </main>
@@ -98,4 +116,5 @@
    
     
 </body>
+ <script src= "javascripts/formValidation.js"></script> 
 </html>

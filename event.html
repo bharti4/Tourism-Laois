@@ -1,29 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
-</head>
-<body>
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-  <title>Laois | Laois Tourism </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Beautiful places to in Laois to explore , have wonderfull time with family and freinds"/>
-  <link rel="stylesheet"  href="styles/application.css">
-  <link rel="icon" type="image/x-icon" href="/images/Laois-logo/3.png">
+  <head>
+    <title>Events Laois | Laois Tourism </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Beautiful places to in Laois to explore , have wonderfull time with family and freinds"/>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet"  href="styles/application.css">
+    <link rel="stylesheet"  href="styles/event.css">
+    <link rel="icon" type="image/x-icon" href="/images/Laois-logo/3.png">
+  </head>
   <body>
     <!-- Header of the page -->
-    
+ 
     <header > 
-       
       <nav class="header-container">
         <a href="/index.html" >
           <div class="logo-light-box1" >
@@ -36,21 +27,42 @@
           <li><a href="resturants.html" >Food & Drink</a></li>
           <li><a href="event.html">Events</a> </li>
           <li><a href="/contact.html">Contact Us</a></li>
+           <!-- cart icon -->
+          <li> <a href="/cartDetail.html" > <i class="fas fa-shopping-cart"></i> </a></li>
+         
         </ul>
-       
       </nav>
     </header>
+    
     <main >
-        Page under Construction
+    
+      <div class="h1-image-container">
+        <img src="/images/Events.jpg" alt="Events in Laois ">
+        <div class="h1-container">
+          <h1 class="h1-animated-text"> Be Part of Laois Events</h1>
+        </div>
+      </div>
+
+      <div class="intro-container">
+        <h2>Welcome to be part of Laois festival, performance, concert, reading or sporting event happening in all around the year!</h2>
         <p>From ancient festivals in the Slieve Bloom Mountains to modern day merry-making, Laois has enjoyed a party more than most for thousands of years. With over 60 events happening each month , you are most definitely invited to celebrate with us.
             And from major international music weekends to local fiestas covering everything from scarecrows and storytelling, to drama and literature, you’re sure to find your tribe. For the outdoor enthusiast there’s weekly guided walks, runs and cycles. Come join us as we celebrate the length and breadth of the county – morning, noon, and night…
-            
-            
-            Enter Keyword. Search for Events by Keyword.</p>
+      </div>
+      
+      <!--List of Events -->
+      <div class="w3-container" style="text-align: left;">
+          <h2>Events :</h2>
+          <p>Book an Events happening in Laois :</p>
+
+          <div class="eventList">
+            <!-- render List of Events here -->
+         </div>
+      </div>
     
     </main>
+    
     <!--Footer of the Page-->
-   <footer class="footer-container">
+    <footer class="footer-container">
       <a href="/index.html" >
         <div class="logo-light-box1">
           <img  class="logo-image" src="/images/Laois-logo/3.png" alt="Laois Tourism site logo" >
@@ -84,6 +96,18 @@
      </div>
    </footer>
    
-    
+   <script type="module" src="/javascripts/eventsRender.js"> </script>
+   <script>
+     
+      function bookingforEvent(values) {
+        const urlParams = new URLSearchParams();
+        for (const key in values) {
+          urlParams.append(key, values[key]);
+        }
+       
+        window.open("booking.html?" + urlParams.toString(), "popup", "width=600,height=400");
+      }
+   </script>
+       
 </body>
 </html>

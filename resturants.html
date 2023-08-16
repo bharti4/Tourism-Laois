@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Laois | Laois Tourism </title>
+<head>
+  <title>Resurants and Bars Laois </title>
+  <link rel="icon" type="image/x-icon" href="/images/Laois-logo/3.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Beautiful places to in Laois to explore , have wonderfull time with family and freinds"/>
+  <link rel="stylesheet" href="/styles/resturant.css">
   <link rel="stylesheet"  href="styles/application.css">
-  <link rel="icon" type="image/x-icon" href="/images/Laois-logo/3.png">
-  <body>
+  
+  <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"  integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+
+     <!-- Leaflet's javascript-->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="   crossorigin=""></script>
+</head>
+
+<body>
     <!-- Header of the page -->
-    
     <header > 
-      
-         <!--
-          <img src="/images/Laois-logo/5.png" alt="Laois Tourism site logo" >
-         <img src="/images/Laois-logo/4.png" alt="Laois Tourism site logo" >
-         <img src="/images/Laois-logo/1.png" alt="Laois Tourism site logo" >
-         <img src="/images/Laois-logo/6.png" alt="Laois Tourism site logo" >
-         -->
-       
       <nav class="header-container">
         <a href="/index.html" >
           <div class="logo-light-box1" >
@@ -29,17 +31,42 @@
           <li><a href="/resturants.html" >Food & Drink</a></li>
           <li><a href="/event.html">Events</a> </li>
           <li><a href="/contact.html">Contact Us</a></li>
+          <!-- cart icon -->
+          <li> <a href="/cartDetail.html" > <i class="fas fa-shopping-cart"></i> </a>
         </ul>
        
       </nav>
     </header>
     <main >
-
-      Page under Construction
-        
+      <div class="container">
+        <div class="h1-image-container h1-image-restarant">
+                <img src="/images/resturant/2.jpg" alt="Beautiful Laois ">
+                <div class="h1-container">
+                  <h1 class="h1-animated-text"> Dine Out! </h1>
+                </div>
+        </div>
+        <div class="intro-container">
+          <h2>Food and Drink Locations in Laois</h2>
+          <p> Whatever your taste buds desire, you will find it in Laois.There will restaurants matching every budget and palate. You can easily find  five star dining with award-wining gastro-pubs, cafes, and restaurants.</p>
+        </div>
+      </div>
+      <main >
+        <!--  Map container -->
+        <div class="container">
+          <div class="resturant-map">
+            <button class="close-button" onclick="closeMapDiv()">X</button>
+            <div id="resturantMap"></div>
+             
+           </div>
+          <!-- List of Food and Drink locations-->
+          <div class="resturantList">
+             <!-- render restaurants here -->
+          </div>
+        </div>
+      
     </main>
-    <!--Footer of the Page-->
-   <footer class="footer-container">
+    <!-- Footer of the Page -->
+    <footer class="footer-container">
       <a href="/index.html" >
         <div class="logo-light-box1">
           <img  class="logo-image" src="/images/Laois-logo/3.png" alt="Laois Tourism site logo" >
@@ -73,6 +100,36 @@
      </div>
    </footer>
    
-    
+  
 </body>
+<script src="/javascripts/resturants.js"></script>
+<script>
+// Show the map for the selected restaurant
+  function showMap(id) {
+    document.querySelector('.resturant-map').style.display = 'block';
+    var lat=resturants[id].lat;
+    var lng = resturants[id].lng;
+    var restaurantName = resturants[id].name;
+    document.getElementById('resturantMap').innerHTML = "<div id='map' style='width: 100%; height: 100%;'></div>";
+    // Create a map using the OpenStreetMap API
+    var map = L.map('map').setView([lat, lng], 13);
+    //var map = L.map('map').setView([53.033967517259356, -7.300832425972798],15)
+
+    // Add a tile layer using OpenStreetMap data
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker for the selected restaurant
+    L.marker([lat, lng]).addTo(map).bindPopup(restaurantName);
+   
+    
+}
+function closeMapDiv() {
+  document.querySelector('.resturant-map').style.display = 'none';
+}
+closeMapDiv();
+</script>
+//Load the Leaflet.js library 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js">  </script>
 </html>

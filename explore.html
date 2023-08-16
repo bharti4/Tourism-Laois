@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Laois | Laois Tourism </title>
+  <title>Explore Laois | Laois Tourism </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Beautiful places to in Laois to explore , have wonderfull time with family and freinds"/>
+  <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <link rel="stylesheet"  href="styles/application.css">
   <link rel="icon" type="image/x-icon" href="/images/Laois-logo/3.png">
+  
   <body>
     <!-- Header of the page -->
     
     <header > 
-      
-         <!--
-          <img src="/images/Laois-logo/5.png" alt="Laois Tourism site logo" >
-         <img src="/images/Laois-logo/4.png" alt="Laois Tourism site logo" >
-         <img src="/images/Laois-logo/1.png" alt="Laois Tourism site logo" >
-         <img src="/images/Laois-logo/6.png" alt="Laois Tourism site logo" >
-         -->
-       
+         
       <nav class="header-container">
         <a href="/index.html" >
           <div class="logo-light-box1" >
@@ -29,16 +24,125 @@
           <li><a href="/resturants.html" >Food & Drink</a></li>
           <li><a href="/event.html">Events</a> </li>
           <li><a href="/contact.html">Contact Us</a></li>
+          <!-- cart icon -->
+          <li> <a href="/cartDetail.html" > <i class="fas fa-shopping-cart"></i> </a>
         </ul>
        
       </nav>
     </header>
     <main >
 
-      Page under Construction
-    </main>
+      <div class="h1-image-container">
+          <img src="/images/PlacesToVisit.jpg" alt="Beautiful Laois ">
+          <div class="h1-container">
+            <h1 class="h1-animated-text"> Explore Laois </h1>
+        </div>
+      </div>
+      <div class="intro-container">
+        <h2>Explore Laois</h2>
+        <p> 
+          The county is renowned for its rich past, heritage, and culture. it has a whole plethora of ancient sites and landmarks, including the Abbeyleix Heritage House, Emo Court, and Rock of Dunamase.
+          It is surrounded by beautiful gardens and adventure walks.
+        </p>
+      </div>
+      <div class="type-of-activity-selection" >
+        <button class="type-of-activity-Button" id="outdoor"> <img src="/images/explore/Outdoor.png" alt="Outdoor"> Outdoor Activities</button>
+        <button class="type-of-activity-Button" id="indoor"><img src="/images/explore/meditation.png" alt="yoga Meditation"> Yoga Meditation Indoor</button>
+        <button class="type-of-activity-Button" id="art"><img src="/images/explore/art-icons.png" alt="art Event"> Art </button>
+        <button class="type-of-activity-Button" id="all"><img src="/images/explore/activities.png" alt="All Activities"> All Activities </button>
+       
+      </div>
+      
+      <!--Outdoor Events-->
+      <div class="explore-container outdoor">
+        <div class="explore-detail-containter ">
+            <div class="placeDetail">
+                <h2>
+                  Heywood Gardens 
+                </h2>
+                
+                  <address> <i class="fa fa-map-marker">  Cappanashannagh, Ballinakill, Co. Laois, Ireland</i></address>
+                   <a style="color:green"> http://www.laoisgardens.ie </a>
+                  <p>Hidden gem in Co. Laois. the circular walled beautiful garden.It designed by Lutyens are glorious and there is lake surrounded by deciduous trees - in Autumn they were especially magnificent.</p>
+                
+            </div>
+            <div class="exploreImage" style="background-image: url(./images/explore/garden.jpg);"></div>
+          </div>
+          <hr> 
+        <div class="explore-detail-containter ">
+             <div class="exploreImage" style="background-image: url(./images/explore/PondImage.jpg);"></div>
+             <div class="text-about">
+              <h2>
+                Gills Pond , Ballinakill 
+              </h2>
+              
+                <address> <i class="fa fa-map-marker"> Ballinakill, County Laois, Ireland</i></address>
+                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+            </div>
+        </div> 
+      </div>
+      <hr>
+        <!-- indoor Events -->
+        <div class="explore-container indoor">
+          <div class="explore-detail-containter ">
+              <div class="placeDetail">
+                  <h2>
+                    Apple Blossom Holistic
+                  </h2>
+                  
+                    <address> <i class="fa fa-map-marker">   Co. Laois, Ireland</i></address>
+                     <a style="color:green"> https://www.appleblossomholistic.ie/home </a>
+                    <p>Holistic Wellness Education ! You can enjoy Yoga and Medition classes provieded!</p>
+                  
+              </div>
+               <div class="exploreImage" style="background-image: url(./images/explore/appleblossom.jpg);"></div>
+            </div>
+            <hr>
+            <div class="explore-detail-containter ">
+                <div class="exploreImage" style="background-image: url(./images/explore/Blackhill-Woods.jpg);"></div>
+                  <div class="text-about">
+                    <h2>
+                      Blackhill Woods Retreat
+                    </h2>
+                      <address> <i class="fa fa-map-marker">  Blackhill Woods Retreat, County Laois, Ireland</i></address>
+                      <p> Safe space to find time to be yourself, to breathe, stretch, move, relax !</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+          <!-- art Activities Places-->
+          <div class="explore-container art">
+            <div class="explore-detail-containter ">
+                <div class="placeDetail">
+                    <h2>
+                      PortLaois Library 
+                    </h2>
+                    
+                      <address> <i class="fa fa-map-marker">  Dunamaise House, 3 Lyster Square, Kylekiproe, Portlaoise, Co. Laois</i></address>
+                       <a style="color:green"> http://www.laoislibraries.ie </a>
+                      <p>All are welcome to explore the Library of Laoise. You can participate in art , chess and other events. It has collection of books , you can enjoy!</p>
+       
+                </div>
+                <div class="exploreImage" style="background-image: url(./images/explore/portlaoise-library.jpg);">
+                 </div>
+            </div>
+            <hr>
+            <div class="explore-detail-containter ">
+              <div class="exploreImage" style="background-image: url(./images/explore/art-classes.jpg);">
+              </div>
+                <div class="text-about">
+                  <h2>
+                    Art classes , PortLaois
+                  </h2>
+                   <address> <i class="fa fa-map-marker"> PortLaois, County Laois, Ireland</i></address>
+                    <p>Art classes for all ages. Private classes and group activities.</p>
+                </div>
+            </div>
+          </div>
+      </main>
     <!--Footer of the Page-->
-   <footer class="footer-container">
+  <footer class="footer-container">
       <a href="/index.html" >
         <div class="logo-light-box1">
           <img  class="logo-image" src="/images/Laois-logo/3.png" alt="Laois Tourism site logo" >
@@ -70,8 +174,7 @@
           </ul>
         </div>
      </div>
-   </footer>
-   
-    
-</body>
+ </footer>
+ </body>
+ <script type="module" src="/javascripts/explore.js"> </script>
 </html>
