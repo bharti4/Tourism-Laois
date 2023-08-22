@@ -109,7 +109,10 @@ References :
 4. Youtube channels : Web Dev Simplified 
 
 5. For wireframe design : https://www.figma.com/ 
+==========================================================================================================================================
+Screen Shots of Home Page
+![image](https://github.com/bharti4/Tourism-Laois/assets/65974949/0a26990b-fe03-4ea8-9b38-9ecaa12be047)
 
  
-
+Sc
  
